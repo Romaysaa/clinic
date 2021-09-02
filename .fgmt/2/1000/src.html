@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><link type="text/css" rel="stylesheet" href="/ts-web-server/javax.faces.resource/theme.css.xhtml?ln=primefaces-bootstrap" /><script type="text/javascript" src="/ts-web-server/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=5.2"></script><script type="text/javascript" src="/ts-web-server/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=5.2"></script><script type="text/javascript" src="/ts-web-server/javax.faces.resource/primefaces.js.xhtml?ln=primefaces&amp;v=5.2"></script><link type="text/css" rel="stylesheet" href="/ts-web-server/javax.faces.resource/primefaces.css.xhtml?ln=primefaces&amp;v=5.2" /><script type="text/javascript">if(window.PrimeFaces){}</script>
+		<title>Sign In </title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate, max-age=0" />
+		<meta http-equiv="refresh" content="5400; URL=/ts-web-server/auth/login.xhtml" />
+
+		<link rel="stylesheet" type="text/css" href="/ts-web-server/lib/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="/ts-web-server/css/main.css" />
+		<link rel="stylesheet" href="/ts-web-server/lib/font-awesome/css/font-awesome.css" />
+
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="/ts-web-server/ico/favicon.ico" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ts-web-server/ico/apple-touch-icon-144-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ts-web-server/ico/apple-touch-icon-114-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ts-web-server/ico/apple-touch-icon-72-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" href="/ts-web-server/ico/apple-touch-icon-57-precomposed.png" />
+		<script src="/ts-web-server/lib/jsdiff/jsdiff.js" type="text/javascript"></script>
+
+		<script src="https://www.google.com/recaptcha/api.js"></script></head><body class="empty-template-body">
+		<div>
+			<!-- Header -->
+				<div class="empty-template-top"></div>
+			<!-- Header  -->
+		</div>
+		<div>
+			<!-- Content -->
+    <div style="margin-top: -80px" class="navbar navbar-static-top navbar-inverse">
+            <div class="navbar-inner">    	
+		    	<div class="nav-collapse collapse">
+		                    <ul class="nav">
+		                        <li class="dropdown">
+		                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                                <i class="icon-globe"></i> English
+		                            </a>
+		                            <ul class="dropdown-menu">
+		                                    <li><a id="j_idt14:0:j_idt16" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;j_idt14:0:j_idt16&quot;});return false;">العريية</a>
+		                                    </li>
+		                            </ul>
+		                        </li>
+		                    </ul>
+		        </div>
+		    </div>
+		</div>
+        <!-- Login Dialog -->
+<form id="formLogin" name="formLogin" method="post" action="/ts-web-server/auth/login" class="form-signin" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formLogin" value="formLogin" />
+
+            <h2 class="form-signin-heading">Sign In </h2>
+            <!-- Login error -->
+            <!-- Form --><div id="j_idt24" class="ui-messages ui-widget" aria-live="polite"></div>
+            <label for="j_username">Username</label><input id="j_username" type="text" name="j_username" class="span3" />
+
+            <label for="j_password">Password</label><input id="j_password" type="password" name="j_password" value="" class="span3" />
+
+         
+         	<label class="remember-me"><input id="j_remember_me" type="checkbox" name="j_remember_me" /> Remember Me
+             </label><button id="login" name="login" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn btn-primary pull-right" onclick="" type="submit"><span class="ui-button-text ui-c">Sign In</span></button><script id="login_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_login",{id:"login",widgetVar:"widget_login"});</script>
+            <div class="clearfix"></div>
+            <!-- End Form -->
+            <a href="/ts-web-server/auth/resetPassword">Forgot your password?</a>
+            <br />
+            <a href="http://localhost:80/ts-web-server/auth/register">Registration Company</a><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="1ln5UATKKgmkG9w/hAXaQYPO6AUeQ7dhaaWpHNxeOo5MEtmV1bzhUb5zDcDBauOqjq3T3V+qcl2Bc9srGu/ZzVVfP6FYwLbaFybzx/3DgPdMhjFvL23ZnFXYkfiT5XtNrJXA9FJWWmxVQgIg4mGQd53u75eys+zt+t995qC0hNqfjth+oNk7Pc43VogcEO21FHF7Y8aOUqFgBc1+mDcWoKmFL4VEaxkf1wXaxmdv3vcUGiHwg//jq9D7/5MLf1f7LZQSvJIOpskal9rm3nWTPzOaaGQiw/swpIn2qUonhBJtalpbhtG/wc2mKtSvJWa2SHKQQt0gqHEU0V3kuDAy4mlwC+m1EMUPS78BUvMeQ+B/v7hqvr51UL5Wi5NhurWVo0Ii3y0sHeDN8Z9bLfyACItTuNiu6pQo98uuuBpiOVnLrbXsiqm0JD/gcVlQH2AU/GK1gUS/OVMYJlYbh1repMXhLFVr8RPUhRat0QITAWNYobGVZERwpc59v/UMCfemw/TkTjzt1MKkSBHD/H8d9YfHEm5J+wna9VOh7QKC0B4D93dXPPTWrrWBTD7eqE1tsCErorCLvMWJiQLkPxojCK0PsrCGyTrsC6ApDpMLXiHEz2eq0lUArNFla3G8zzIqNhrEASEabIUc8vp6gcEboXfVJHO3+wUdgG7JKH7tEEoMgNHrnBggmW8DNDDi5/hmkZwcyT6Alq1Lduc/HP5TK94YcxX+myk5+fx7boREyrb+ACl351s59H1+wRLlRF6CIr+dBg2MIqtJdq6cF5EUyqbJm5BNdeY9kCbVy+XBmAyfKeTzHgz2lp+X+XvRXfRrwf94YZTIaCpCOfmOM2pbeZs3PUy2daPYcAyDue65yg6Uxh6YZXUjAUaqS15Gd74x0dOuFLprGcyXFC00I+pSJi5AmnrmxhEwOZ6/IueGDGDpO3id06Kc/RKq9P5pSIm2H2zDhfjs4tsfb3rZEQ/OAnVGBleJxiPf3OyI1kLCKUWo0aJoEF0y498L2ffnvE6OsP8AnSn6CAtn2ufLYfeQ+e+SjfG0ieEqfm1Tnm5rrxTVC9jvrelV1v9Fdz6ZbyCcXgA3t48oUCskZg5T3ck7JzEUTzzDGF3PYQse7I+b8yYP8aAjMaimp7G1cYhw7WliLc0lVYRB0ejfuHE2A3Q/70K8xsVXpbRaGxZSLV1v7z0ld2eWWmftVfHg5F5nct7DO6G+c2+abbVoFG7kBepkFXRW2CwsuteYGU9EkdQonDWeJuRCdhJPpiiZiS9YNKeM" autocomplete="off" />
+</form>
+			<!-- Content End  -->
+		</div>
+		
+		<script src="/ts-web-server/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script></body>
+
+</html>
